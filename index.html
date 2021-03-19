@@ -1,1 +1,104 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+
+        #my-description {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+        body {
+            background-color: rgb(202, 155, 155);
+        }
+
+        em {
+            text-decoration: underline;
+        }
+
+        .abilities {
+            font-size: 18px;
+        }
+
+        #imagem {
+            border-radius: 100px;
+        }
+
+        ul {
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: fantasy;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <a href="#bio">Bio</a>
+        <a href="#habilidades">Habilidades</a><br>
+    </ul>
+    
+    <img id="imagem"src="me.jpeg" alt="uma foto do rosto de luís" width="200px">
+    
+    <h1 id="bio">Quem sou eu?</h1>
+    
+    <p>Olá, me chamo <strong>Luís Carlos de Jesus Seixas</strong>. Tenho 27 anos. <em><strong>Sou brasileiro natural de São Luís do Maranhão</strong></em>. Sou estudante de desenvolvimento web na <strong>Trybe</strong>. Tenho um grande sonho de me tornar um programador e contribuir para que o mundo se torne um lugar melhor. </p> 
+
+
+    <h2 id="habilidades">Lista de Habilidades:</h2>
+        <ul>    
+            <li class="abilities">Flexibilidade</li>
+            <li class="abilities">Capacidade de Análise</li>
+            <li class="abilities">Espírito de Equipe</li>
+            <li class="abilities">Boa comunicação</li>
+            <li class="abilities"><strong>Criatividade e Inovação</strong></li>
+            <li class="abilities">Resolução de Problemas</li>
+        </ul>
+    
+    <p>Você pode acessar o link do blog da Trybe clicando <a href="https://blog.betrybe.com/" target="_blank">aqui</a></p>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	
+</script></body>
+</html>
