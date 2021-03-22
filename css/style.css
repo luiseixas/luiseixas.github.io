@@ -1,31 +1,91 @@
+        * {
+            font-family: monospace, Helvetica, Verdana, sans-serif;
+            
+        }
+        
+        body {
+            background-color: #27293b;
+            color: #f0f0f0;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        #navbar {
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+
+        #intro {
+           display: block;
+           width: 100%;
+           text-align: center;
+        }
+
+        #my-name { 
+            text-align: center;
+            font-weight: bold;
+            font-size: 2em;
+        }
 
         #my-description {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: left;
+            width: 50%;
+            margin-left: 20px;
+
         }
-
-
-        body {
-            background-color: #232741;
-            color: aliceblue;
-        }
-
+        
+        
         em {
             text-decoration: underline;
         }
 
+        #imagem {
+            width: 350px;
+            border-radius: 175px;
+            box-sizing: border-box; 
+            max-width: 100%;
+            max-height: 100%;  
+            position: absolute;
+            left: 1000px;
+            top: 200px;
+            background-color: rgb(201, 22, 22);
+
+        }
+        
         .abilities {
-            font-size: 18px;
+            font-size: 1.2em;
         }
 
-        #imagem {
-            border-radius: 100px;
+        h2 {
+            margin-left: 20px;
         }
 
         ul {
-            padding: 20px;
+           padding: 10px;
+           margin-left: 40px;
         }
 
         a {
             text-decoration: none;
-            font-family: fantasy;
+            color: #f0f0f0;
         }
+
+        p a {
+            text-decoration: underline;
+        }
+
+        ul li:nth-child(2n+1) {
+            font-weight: bold;
+        }
+
+        #navbar a:hover {
+            font-size: 20px;
+        }
+
+        p {
+            margin-left: 20px;
+        }
+        
+
+      
