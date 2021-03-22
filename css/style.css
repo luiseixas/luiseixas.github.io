@@ -14,6 +14,7 @@
         #navbar {
             margin-top: 0px;
             margin-left: 10px;
+    
         }
 
         #intro {
@@ -39,9 +40,17 @@
         em {
             text-decoration: underline;
         }
-
+        
         #imagem {
             width: 350px;
+            border-radius: 100%;
+                      
+        }
+        
+        
+        #minha-foto {
+            width: 350px;
+            height: 350px;
             border-radius: 175px;
             box-sizing: border-box; 
             max-width: 100%;
@@ -49,10 +58,10 @@
             position: absolute;
             left: 1000px;
             top: 200px;
-            background-color: rgb(201, 22, 22);
+            background-color: red;
 
         }
-        
+
         .abilities {
             font-size: 1.2em;
         }
@@ -86,6 +95,7 @@
         p {
             margin-left: 20px;
         }
+        
         
 
       
